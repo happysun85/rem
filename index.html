@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>Title</title>
+<script>
+var html = document.documentElement,
+    width = html.clientWidth;
+html.style.fontSize = width / 16 + 'px';
+</script>
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.swiper img {
+  width: 100%;
+}
+.pingjia ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+}
+ul li div:nth-of-type(1) {
+  width: 3.75rem;
+}
+.pingjia {
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+a.active {
+  background-position: 0 !important;
+}
+</style>
+</head>
+<body>
+<section class="swiper">
+  <ul>
+    <li><img src="img/5.jpg" alt=""></li>
+  </ul>
+</section>
+<section class="pingjia">
+  <h4>给景区评分</h4>
+  <ul>
+    <li>
+      <div>综合印象</div>
+      <div class="start">
+      </div>
+    </li>
+    <li>
+      <div>服务指数</div>
+      <div class="start2"></div>
+    </li>
+    <li>
+      <div>消费指数</div>
+      <div class="start3"></div>
+    </li>
+  </ul>
+</section>
+<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="js.js"></script>
+<script>
+$('.start').star();
+$('.start2').star();
+$('.start3').star();
+</script>
+</body>
+</html>
